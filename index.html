@@ -3,16 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page with PDF Links</title>
+    <title>Main Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            margin-top: 20px;
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Main Page</h1>
-    <nav>
-        <ul>
-            <li><a href="My Resume.pdf" target="_blank">My Resume</a></li>
-            <li><a href="file2.pdf" target="_blank">PDF Link 2</a></li>
-            <li><a href="file3.pdf" target="_blank">PDF Link 3</a></li>
-            <li><a href="MyDevice.pdf" target="_blank">My Devices</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>Top Title</h1>
+    </header>
+    <main>
+        <img src="your-image-url.jpg" alt="Centered Image" style="max-width: 100%; height: auto;">
+    </main>
+    <footer>
+        <button onclick="location.href='#link1'">Link 1</button>
+        <button onclick="location.href='#link2'">Link 2</button>
+        <button onclick="location.href='#link3'">Link 3</button>
+        <button onclick="location.href='#link4'">Link 4</button>
+    </footer>
 </body>
+</html>
